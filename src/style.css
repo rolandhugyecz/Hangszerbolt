@@ -1,7 +1,19 @@
 @import "tailwindcss";
 
-.box{
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
+#guitar{
+  background-image: url(img/gitar.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#drums{
+  background-image: url(img/drums.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#bass{
+  background-image: url(img/bass.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
