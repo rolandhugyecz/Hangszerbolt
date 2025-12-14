@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gitár</title>
+    <title>Guitar</title>
   </head>
   <body>
-    <div></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div class="grid items-center justify-center min-h-screen">
+        <div class="grid grid-cols-3 gap-10 font-mono text-6xl leading-6 font-bold text-black noselect ">
+            <div class="grid size-100 items-center justify-center rounded-lg bg-gray-400 cursor-pointer" id="Achord"></div>
+            <div class="grid size-100 items-center justify-center rounded-lg bg-gray-400 cursor-pointer" id="Echord"></div>
+            <div class="grid size-100 items-center justify-center rounded-lg bg-gray-400 cursor-pointer" id="Dchord"></div>
+            <div class="grid size-100 items-center justify-center rounded-lg bg-gray-400 cursor-pointer" id="Gchord"></div>
+            <div class="grid size-100 items-center justify-center rounded-lg bg-gray-400 cursor-pointer" id="Bchord"></div>
+            <div class="grid size-100 items-center justify-center rounded-lg bg-gray-400 cursor-pointer" id="Cchord"></div>
+        </div>
+    <script type="module" src="/src/guitar.ts"></script>
   </body>
 </html>
