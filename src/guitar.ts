@@ -42,3 +42,34 @@ GDiv.addEventListener('click', ()=>{
     GSND.currentTime = 0;
     GSND.play();
 })
+
+document.addEventListener('keydown', (event) => {
+    if (event.repeat) return;
+
+    switch (event.key) {
+        case '1':
+            ASND.currentTime = 0;
+            ASND.play();
+            break;
+        case '2':
+            BSND.currentTime = 0;
+            BSND.play();
+            break;
+        case '3':
+            CSND.currentTime = 0;
+            CSND.play();
+            break;
+        case '4':
+            DSND.currentTime = 0;
+            DSND.play();
+            break;
+        case '5':
+            ESND.currentTime = 0;
+            ESND.play();
+            break;
+        case '6':
+            GSND.currentTime = 0;
+            GSND.play();
+            break;
+    }
+});
