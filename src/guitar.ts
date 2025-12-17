@@ -2,7 +2,7 @@ import './style.css'
 
 const ADiv : HTMLDivElement = document.querySelector('#Achord') as HTMLDivElement;
 const EDiv : HTMLDivElement = document.querySelector('#Echord') as HTMLDivElement;
-const Ddiv : HTMLDivElement = document.querySelector('#Dchord') as HTMLDivElement;
+const DDiv : HTMLDivElement = document.querySelector('#Dchord') as HTMLDivElement;
 const GDiv : HTMLDivElement = document.querySelector('#Gchord') as HTMLDivElement;
 const BDiv : HTMLDivElement = document.querySelector('#Bchord') as HTMLDivElement;
 const CDiv : HTMLDivElement = document.querySelector('#Cchord') as HTMLDivElement;
@@ -28,7 +28,7 @@ CDiv.addEventListener('click', ()=>{
     CSND.play();
 })
 
-Ddiv.addEventListener('click', ()=>{
+DDiv.addEventListener('click', ()=>{
     DSND.currentTime = 0;
     DSND.play();
 })
