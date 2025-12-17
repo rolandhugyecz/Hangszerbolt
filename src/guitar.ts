@@ -6,12 +6,12 @@ const Ddiv : HTMLDivElement = document.querySelector('#Dchord') as HTMLDivElemen
 const GDiv : HTMLDivElement = document.querySelector('#Gchord') as HTMLDivElement;
 const BDiv : HTMLDivElement = document.querySelector('#Bchord') as HTMLDivElement;
 const CDiv : HTMLDivElement = document.querySelector('#Cchord') as HTMLDivElement;
-const ASND = new Audio(new URL('./sounds/guitar/A.m4a', import.meta.url).href);
-const BSND = new Audio(new URL('./sounds/guitar/B.m4a', import.meta.url).href);
-const CSND = new Audio(new URL('./sounds/guitar/C.m4a', import.meta.url).href);
-const DSND = new Audio(new URL('./sounds/guitar/D.m4a', import.meta.url).href);
-const ESND = new Audio(new URL('./sounds/guitar/E.m4a', import.meta.url).href);
-const GSND = new Audio(new URL('./sounds/guitar/G.m4a', import.meta.url).href);
+const ASND: HTMLAudioElement = new Audio(new URL('./sounds/guitar/A.m4a', import.meta.url).href);
+const BSND: HTMLAudioElement = new Audio(new URL('./sounds/guitar/B.m4a', import.meta.url).href);
+const CSND: HTMLAudioElement = new Audio(new URL('./sounds/guitar/C.m4a', import.meta.url).href);
+const DSND: HTMLAudioElement = new Audio(new URL('./sounds/guitar/D.m4a', import.meta.url).href);
+const ESND: HTMLAudioElement = new Audio(new URL('./sounds/guitar/E.m4a', import.meta.url).href);
+const GSND: HTMLAudioElement = new Audio(new URL('./sounds/guitar/G.m4a', import.meta.url).href);
 
 ADiv.addEventListener('click', ()=>{
     ASND.currentTime = 0;
@@ -45,7 +45,6 @@ GDiv.addEventListener('click', ()=>{
 
 document.addEventListener('keydown', (event) => {
     if (event.repeat) return;
-
     switch (event.key) {
         case '1':
             ASND.currentTime = 0;
