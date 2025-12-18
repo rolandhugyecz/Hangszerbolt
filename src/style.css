@@ -58,3 +58,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.keret{
+  border: 4px solid black;
+  transition: border 0.3s;
+}
+
+.kerethvr{
+  border: 4px solid yellow;
+}
+.keret:hover{
+  border: 4px solid yellow;
+}

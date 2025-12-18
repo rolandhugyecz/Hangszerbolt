@@ -2,7 +2,7 @@ import './style.css'
 
 const ADiv : HTMLDivElement = document.querySelector('#Achord') as HTMLDivElement;
 const EDiv : HTMLDivElement = document.querySelector('#Echord') as HTMLDivElement;
-const Ddiv : HTMLDivElement = document.querySelector('#Dchord') as HTMLDivElement;
+const DDiv : HTMLDivElement = document.querySelector('#Dchord') as HTMLDivElement;
 const GDiv : HTMLDivElement = document.querySelector('#Gchord') as HTMLDivElement;
 const BDiv : HTMLDivElement = document.querySelector('#Bchord') as HTMLDivElement;
 const CDiv : HTMLDivElement = document.querySelector('#Cchord') as HTMLDivElement;
@@ -28,7 +28,7 @@ CDiv.addEventListener('click', ()=>{
     CSND.play();
 })
 
-Ddiv.addEventListener('click', ()=>{
+DDiv.addEventListener('click', ()=>{
     DSND.currentTime = 0;
     DSND.play();
 })
@@ -49,6 +49,12 @@ document.addEventListener('keydown', (event) => {
         case '1':
             ASND.currentTime = 0;
             ASND.play();
+            while (ASND.currentTime > 0) {
+                document.querySelector('#Achord')!.classList.add('kerethvr');
+            }
+            if (ASND.ended) {
+                document.querySelector('#Achord')!.classList.remove('kerethvr');
+            }
             break;
         case '2':
             BSND.currentTime = 0;

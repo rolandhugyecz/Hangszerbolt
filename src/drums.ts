@@ -57,6 +57,12 @@ document.addEventListener('keydown', (event) => {
         case '1':
             CCSND.currentTime = 0;
             CCSND.play();
+            while (CCSND.currentTime > 0) {
+                document.querySelector('#CC')!.classList.add('kerethvr');
+            }
+            if (CCSND.ended) {
+                document.querySelector('#CC')!.classList.remove('kerethvr');
+            }
             break;
         case '2':
             RCSND.currentTime = 0;
