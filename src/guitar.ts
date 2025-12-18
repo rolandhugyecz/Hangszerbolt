@@ -49,32 +49,50 @@ document.addEventListener('keydown', (event) => {
         case '1':
             ASND.currentTime = 0;
             ASND.play();
-            while (ASND.currentTime > 0) {
-                document.querySelector('#Achord')!.classList.add('kerethvr');
-            }
-            if (ASND.ended) {
-                document.querySelector('#Achord')!.classList.remove('kerethvr');
-            }
-            break;
-        case '2':
-            BSND.currentTime = 0;
-            BSND.play();
-            break;
-        case '3':
-            CSND.currentTime = 0;
-            CSND.play();
-            break;
-        case '4':
-            DSND.currentTime = 0;
-            DSND.play();
+            (document.querySelector('#Achord') as HTMLDivElement).classList.add('kerethvr');
+            setTimeout(() => {
+                (document.querySelector('#Achord') as HTMLDivElement).classList.remove('kerethvr');
+            }, 300);
             break;
         case '5':
-            ESND.currentTime = 0;
-            ESND.play();
+            BSND.currentTime = 0;
+            BSND.play();
+            (document.querySelector('#Bchord') as HTMLDivElement).classList.add('kerethvr');
+            setTimeout(() => {
+                (document.querySelector('#Bchord') as HTMLDivElement).classList.remove('kerethvr');
+            }, 300);
             break;
         case '6':
+            CSND.currentTime = 0;
+            CSND.play();
+            (document.querySelector('#Cchord') as HTMLDivElement).classList.add('kerethvr');
+            setTimeout(() => {
+                (document.querySelector('#Cchord') as HTMLDivElement).classList.remove('kerethvr');
+            }, 300);
+            break;
+        case '3':
+            DSND.currentTime = 0;
+            DSND.play();
+            (document.querySelector('#Dchord') as HTMLDivElement).classList.add('kerethvr');
+            setTimeout(() => {
+                (document.querySelector('#Dchord') as HTMLDivElement).classList.remove('kerethvr');
+            }, 300);
+            break;
+        case '2':
+            ESND.currentTime = 0;
+            ESND.play();
+            (document.querySelector('#Echord') as HTMLDivElement).classList.add('kerethvr');
+            setTimeout(() => {
+                (document.querySelector('#Echord') as HTMLDivElement).classList.remove('kerethvr');
+            }, 300);
+            break;
+        case '4':
             GSND.currentTime = 0;
             GSND.play();
+            (document.querySelector('#Gchord') as HTMLDivElement).classList.add('kerethvr');
+            setTimeout(() => {
+                (document.querySelector('#Gchord') as HTMLDivElement).classList.remove('kerethvr');
+            }, 300);
             break;
     }
 });

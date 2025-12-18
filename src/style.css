@@ -12,8 +12,8 @@
   background-position: top;
 }
 
-#bass{
-  background-image: url(img/bass.png);
+#ukulele{
+  background-image: url(img/ukulele.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -69,4 +69,20 @@
 }
 .keret:hover{
   border: 4px solid yellow;
+}
+
+.backBTN{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
 }
