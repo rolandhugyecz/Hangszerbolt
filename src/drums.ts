@@ -19,6 +19,9 @@ const HHSND: HTMLAudioElement = new Audio(new URL('./sounds/drums/HH.m4a', impor
 CCdiv.addEventListener('click', ()=>{
     CCSND.currentTime = 0;
     CCSND.play();
+    while (CCSND.currentTime > 0) {
+        
+    }
 })
 
 RCdiv.addEventListener('click', ()=>{

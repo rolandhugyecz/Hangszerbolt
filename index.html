@@ -7,18 +7,25 @@
     <title>Hangszerbolt</title>
   </head>
   <body>
-      <div class="flex items-center justify-center min-h-screen">
-        <div class="flex flex-row gap-x-4 font-mono text-xl leading-6 font-bold text-black ">
-          <a href="gitar.html">
-            <div class="flex size-100 items-end justify-center rounded-lg bg-gray-400 " id="guitar">Gitár</div>
-          </a>
-          <a href="drums.html">
-            <div class="flex size-100 items-end justify-center rounded-lg bg-gray-400" id="drums">Dobok</div>
-          </a>
-          <a href="bass.html">
-            <div class="flex size-100 items-end justify-center rounded-lg bg-gray-400 " id="bass">Basszus</div>
-          </a>
+      <div class="h-screen flex flex-col items-center justify-center">
+        <header class="px-6 py-4">
+          <h1 class="font-bold text-9xl">Hangszerbolt</h1>
+        </header>
+        <main class="flex-1 flex">
+        <div class="flex items-center justify-center h-full">
+          <div class="flex flex-row gap-x-4 font-mono text-xl leading-6 font-bold text-black noselect">
+            <a href="gitar.html">
+              <div class="flex size-100 items-end justify-center rounded-lg bg-gray-400 keret" id="guitar">Gitár</div>
+            </a>
+            <a href="drums.html">
+              <div class="flex size-100 items-end justify-center rounded-lg bg-gray-400 keret" id="drums">Dobok</div>
+            </a>
+            <a href="bass.html">
+              <div class="flex size-100 items-end justify-center rounded-lg bg-gray-400 keret" id="bass">Basszus</div>
+            </a>
+          </div>
         </div>
+        </main>
       </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
