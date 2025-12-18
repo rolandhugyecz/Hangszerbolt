@@ -49,6 +49,12 @@ document.addEventListener('keydown', (event) => {
         case '1':
             ASND.currentTime = 0;
             ASND.play();
+            while (ASND.currentTime > 0) {
+                document.querySelector('#Achord')!.classList.add('kerethvr');
+            }
+            if (ASND.ended) {
+                document.querySelector('#Achord')!.classList.remove('kerethvr');
+            }
             break;
         case '2':
             BSND.currentTime = 0;

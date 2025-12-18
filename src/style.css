@@ -64,6 +64,9 @@
   transition: border 0.3s;
 }
 
-.kerethvr:hover{
+.kerethvr{
+  border: 4px solid yellow;
+}
+.keret:hover{
   border: 4px solid yellow;
 }
