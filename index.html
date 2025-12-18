@@ -7,25 +7,35 @@
     <title>Hangszerbolt</title>
   </head>
   <body>
-      <div class="h-screen flex flex-col items-center justify-center">
-        <header class="px-6 py-4">
-          <h1 class="font-bold text-9xl">Hangszerbolt</h1>
+      <div class="h-screen grid grid-col items-center justify-center">
+        <header class="px-6 py-4 items-center justify-center text-center">
+          <h1 class="font-bold text-5xl lg:text-9xl">Hangszerbolt</h1>
         </header>
-        <main class="flex-1 flex">
-        <div class="flex items-center justify-center h-full">
-          <div class="flex flex-row gap-x-4 font-mono text-xl leading-6 font-bold text-black noselect">
+        <main class="grid-1 grid">
+        <div class="grid items-center justify-center h-full">
+          <div class="grid md:grid-rows-3 md:grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 gap-4 font-mono text-xl leading-6 font-bold text-black noselect">
             <a href="gitar.html">
-              <div class="flex size-100 items-end justify-center rounded-lg bg-gray-400 keret" id="guitar">Gitár</div>
+              <div class="grid size-100 items-end justify-center rounded-lg bg-gray-400 keret" id="guitar">Gitár</div>
             </a>
             <a href="drums.html">
-              <div class="flex size-100 items-end justify-center rounded-lg bg-gray-400 keret" id="drums">Dobok</div>
+              <div class="grid size-100 items-end justify-center rounded-lg bg-gray-400 keret" id="drums">Dobok</div>
             </a>
             <a href="ukulele.html">
-              <div class="flex size-100 items-end justify-center rounded-lg bg-gray-400 keret" id="ukulele">Ukulele</div>
+              <div class="grid size-100 items-end justify-center rounded-lg bg-gray-400 keret" id="ukulele">Ukulele</div>
             </a>
           </div>
         </div>
         </main>
+        <div>
+            <footer class="text-2xl mt-3 rounded-lg bg-gray-200">
+                <div class="text-light">
+                    <div class="text-center p-3 font-bold" style="background-color: rgba(0, 0, 0, 0.05);">
+                  © 2025 Copyright:
+                  <p class="nameanimation">Busa Róbert Dávid & Hugyecz Roland</p>
+                    </div>
+                </div>
+              </footer>
+        </div>
       </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
